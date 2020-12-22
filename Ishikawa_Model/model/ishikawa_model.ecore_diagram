@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_zeaUAD_QEeugVYYDGdNssA" type="Ecore" name="ishikawa_model.ecore_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_28OesD_QEeugVYYDGdNssA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_28Oesj_QEeugVYYDGdNssA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_28Oesz_QEeugVYYDGdNssA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_Ge6wgD_REeugVYYDGdNssA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="ishikawa_model.ecore#//Effect/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Ge6wgT_REeugVYYDGdNssA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_UsTcQD_REeugVYYDGdNssA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="ishikawa_model.ecore#//Effect/description"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UsTcQT_REeugVYYDGdNssA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_28OetD_QEeugVYYDGdNssA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_28OetT_QEeugVYYDGdNssA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_28Oetj_QEeugVYYDGdNssA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_28Oetz_QEeugVYYDGdNssA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_28OeuD_QEeugVYYDGdNssA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_28OeuT_QEeugVYYDGdNssA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_28Oeuj_QEeugVYYDGdNssA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_28Oeuz_QEeugVYYDGdNssA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="ishikawa_model.ecore#//Effect"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_28OesT_QEeugVYYDGdNssA" x="588" y="14" width="232" height="176"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_5_xIMD_QEeugVYYDGdNssA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5_xIMj_QEeugVYYDGdNssA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_5_xIMz_QEeugVYYDGdNssA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_bSEPUD_REeugVYYDGdNssA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="ishikawa_model.ecore#//Category/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bSEPUT_REeugVYYDGdNssA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_fWKW4D_REeugVYYDGdNssA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="ishikawa_model.ecore#//Category/description"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fWKW4T_REeugVYYDGdNssA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_5_xIND_QEeugVYYDGdNssA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_5_xINT_QEeugVYYDGdNssA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_5_xINj_QEeugVYYDGdNssA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_5_xINz_QEeugVYYDGdNssA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_5_xIOD_QEeugVYYDGdNssA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_5_xIOT_QEeugVYYDGdNssA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_5_xIOj_QEeugVYYDGdNssA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_5_xIOz_QEeugVYYDGdNssA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="ishikawa_model.ecore#//Category"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5_xIMT_QEeugVYYDGdNssA" x="616" y="273" width="176" height="155"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_7FEjYD_QEeugVYYDGdNssA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_7FEjYj_QEeugVYYDGdNssA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_7FEjYz_QEeugVYYDGdNssA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_idIH0D_REeugVYYDGdNssA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="ishikawa_model.ecore#//Cause/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_idIH0T_REeugVYYDGdNssA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_ke7AcD_REeugVYYDGdNssA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="ishikawa_model.ecore#//Cause/description"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ke7AcT_REeugVYYDGdNssA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_rIWykD_REeugVYYDGdNssA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="ishikawa_model.ecore#//Cause/valueOfInterest"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rIWykT_REeugVYYDGdNssA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7FEjZD_QEeugVYYDGdNssA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7FEjZT_QEeugVYYDGdNssA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_7FEjZj_QEeugVYYDGdNssA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7FEjZz_QEeugVYYDGdNssA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7FEjaD_QEeugVYYDGdNssA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_7FEjaT_QEeugVYYDGdNssA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7FEjaj_QEeugVYYDGdNssA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7FEjaz_QEeugVYYDGdNssA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="ishikawa_model.ecore#//Cause"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7FEjYT_QEeugVYYDGdNssA" x="609" y="532" width="190" height="162"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_zeaUAT_QEeugVYYDGdNssA"/>
+  <element xmi:type="ecore:EPackage" href="ishikawa_model.ecore#/"/>
+</notation:Diagram>
