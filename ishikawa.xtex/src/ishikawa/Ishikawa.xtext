@@ -10,9 +10,6 @@ Effect returns Effect:
 	('description' description=EString)?
 	(categories+=Category (categories+=Category)*)?;
 
-EString returns ecore::EString:
-	STRING | ID;
-
 Category returns Category:
 	{Category}
 	'Category'
@@ -26,7 +23,11 @@ Cause returns Cause:
 	name=EString
 	('description' description=EString)?
 	('valueOfInterest' valueOfInterest=EString)?
-	('{'subCauses+=Cause (',' subCauses+=Cause)*'}')?;
+	('{'subCauses+=Cause (subCauses+=Cause)*'}')?;
 
+
+EString returns ecore::EString:
+	STRING | ID;
+	
 terminal TAB: ('\t')+;
 terminal NEWLINE: ('\r'? '\n')+;
