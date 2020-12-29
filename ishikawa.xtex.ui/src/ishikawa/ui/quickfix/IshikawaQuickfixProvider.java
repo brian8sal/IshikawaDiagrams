@@ -22,11 +22,32 @@ import ishikawa.validation.IshikawaValidator;
 public class IshikawaQuickfixProvider extends DefaultQuickfixProvider {
 
 	@Fix(IshikawaValidator.INVALID_EFFECT_NAME)
-	public void capitalizeName(final Issue issue, IssueResolutionAcceptor acceptor) {
+	@Fix(IshikawaValidator.NULL_EFFECT_NAME)
+	public void invalidOrNullEffectName(final Issue issue, IssueResolutionAcceptor acceptor) {
 		acceptor.accept(issue, "Set default name", "Set a default name for this effect.", "upcase.png", new IModification() {
 			public void apply(IModificationContext context) throws BadLocationException {
 				IXtextDocument xtextDocument = context.getXtextDocument();
 				xtextDocument.replace(issue.getOffset(), issue.getLength(), "\"EffectExampleName\"");
+			}
+		});
+	}
+	
+	@Fix(IshikawaValidator.INVALID_CATEGORY_NAME)
+	public void invalidOrNullCategoryName(final Issue issue, IssueResolutionAcceptor acceptor) {
+		acceptor.accept(issue, "Set default name", "Set a default name for this category.", "upcase.png", new IModification() {
+			public void apply(IModificationContext context) throws BadLocationException {
+				IXtextDocument xtextDocument = context.getXtextDocument();
+				xtextDocument.replace(issue.getOffset(), issue.getLength(), "\"CategoryExampleName\"");
+			}
+		});
+	}
+	
+	@Fix(IshikawaValidator.INVALID_CAUSE_NAME)
+	public void invalidOrNullCauseName(final Issue issue, IssueResolutionAcceptor acceptor) {
+		acceptor.accept(issue, "Set default name", "Set a default name for this cause.", "upcase.png", new IModification() {
+			public void apply(IModificationContext context) throws BadLocationException {
+				IXtextDocument xtextDocument = context.getXtextDocument();
+				xtextDocument.replace(issue.getOffset(), issue.getLength(), "\"CauseExampleName\"");
 			}
 		});
 	}
