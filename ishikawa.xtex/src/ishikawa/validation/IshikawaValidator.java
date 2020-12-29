@@ -11,14 +11,18 @@ import ishikawa_model.*;
  */
 public class IshikawaValidator extends AbstractIshikawaValidator {
 	
-	public static final String INVALID_NAME = "invalidName";
+	public static final String INVALID_EFFECT_NAME = "invalidEffectName";
+	public static final String INVALID_CATEGORY_NAME = "invalidCategoryName";
+	public static final String INVALID_CAUSE_NAME = "invalidCauseName";
+	public static final String NULL_NAME = "nullName";
+
 
 	@Check
 	public void checkEffectNameNotBlank(Effect effect) {
 		if (effect.getName().isBlank()) {
 			error("Effect's name must not be blank",
 					Ishikawa_modelPackage.Literals.EFFECT__NAME,
-					INVALID_NAME);
+					INVALID_EFFECT_NAME);
 		}
 	}
 	
@@ -27,7 +31,7 @@ public class IshikawaValidator extends AbstractIshikawaValidator {
 		if (category.getName().isBlank()) {
 			error("Category's name must not be blank",
 					Ishikawa_modelPackage.Literals.CATEGORY__NAME,
-					INVALID_NAME);
+					INVALID_CATEGORY_NAME);
 		}
 	}
 	
@@ -36,7 +40,7 @@ public class IshikawaValidator extends AbstractIshikawaValidator {
 		if (cause.getName().isBlank()) {
 			error("Cause's name must not be blank",
 					Ishikawa_modelPackage.Literals.CAUSE__NAME,
-					INVALID_NAME);
+					INVALID_CAUSE_NAME);
 		}
 	}
 	
@@ -45,7 +49,7 @@ public class IshikawaValidator extends AbstractIshikawaValidator {
 		if (effect.getName()==null) {
 			error("Effect's name must exist",
 					Ishikawa_modelPackage.Literals.EFFECT__NAME,
-					INVALID_NAME);
+					NULL_NAME);
 		}
 	}
 	
@@ -54,7 +58,7 @@ public class IshikawaValidator extends AbstractIshikawaValidator {
 		if (category.getName()==null) {
 			error("Category's name must exist",
 					Ishikawa_modelPackage.Literals.CATEGORY__NAME,
-					INVALID_NAME);
+					NULL_NAME);
 		}
 	}
 
@@ -63,7 +67,7 @@ public class IshikawaValidator extends AbstractIshikawaValidator {
 		if (cause.getName()==null) {
 			error("Cause's name must exist",
 					Ishikawa_modelPackage.Literals.CAUSE__NAME,
-					INVALID_NAME);
+					NULL_NAME);
 		}
 	}
 }
