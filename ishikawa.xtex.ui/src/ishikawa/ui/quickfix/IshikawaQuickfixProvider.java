@@ -33,6 +33,7 @@ public class IshikawaQuickfixProvider extends DefaultQuickfixProvider {
 	}
 	
 	@Fix(IshikawaValidator.INVALID_CATEGORY_NAME)
+	@Fix(IshikawaValidator.NULL_CATEGORY_NAME)
 	public void invalidOrNullCategoryName(final Issue issue, IssueResolutionAcceptor acceptor) {
 		acceptor.accept(issue, "Set default name", "Set a default name for this category.", "upcase.png", new IModification() {
 			public void apply(IModificationContext context) throws BadLocationException {
@@ -43,6 +44,7 @@ public class IshikawaQuickfixProvider extends DefaultQuickfixProvider {
 	}
 	
 	@Fix(IshikawaValidator.INVALID_CAUSE_NAME)
+	@Fix(IshikawaValidator.NULL_CAUSE_NAME)
 	public void invalidOrNullCauseName(final Issue issue, IssueResolutionAcceptor acceptor) {
 		acceptor.accept(issue, "Set default name", "Set a default name for this cause.", "upcase.png", new IModification() {
 			public void apply(IModificationContext context) throws BadLocationException {
