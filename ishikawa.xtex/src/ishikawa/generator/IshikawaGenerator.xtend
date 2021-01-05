@@ -22,21 +22,38 @@ class IshikawaGenerator extends AbstractGenerator {
 			<model>
 				<effect>
 					<name>«model.name»</name>
-						«FOR category : model.categories»
-							<category>
-								<name>«category.name»</name>
+					«FOR category : model.categories»
+						<category>
+							<name>«category.name»</name>
+							«IF category.description !== null»
 								<description>«category.description»</description>
-								«FOR cause : category.causes»	
-									<cause>
-										<name>«cause.name»</name>
+							«ENDIF»								
+							«FOR cause : category.causes»	
+								<cause>
+									<name>«cause.name»</name> 
+									«IF cause.description !== null»
 										<description>«cause.description»</description>
+									«ENDIF»
+									«IF cause.valueOfInterest !== null»
 										<value>«cause.valueOfInterest»</value>
-									</cause>
-								«ENDFOR»	
-							</category>
-						«ENDFOR»
-				</effect>
-			</model>
+									«ENDIF»
+									«FOR subcause : cause.subCauses»
+										<subcause>
+											<name>«subcause.name»</name>
+											«IF cause.description !== null»
+												<description>«cause.description»</description>
+											«ENDIF»
+											«IF cause.valueOfInterest !== null»
+												<value>«cause.valueOfInterest»</value>
+											«ENDIF»
+										</subcause>
+								«ENDFOR»
+								</cause>
+						«ENDFOR»	
+						</category>
+					«ENDFOR»
+					</effect>
+				</model>
 		''')
 	}
 }
