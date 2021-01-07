@@ -8,6 +8,7 @@ import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
 import ishikawa_model.Effect
+import ishikawa_model.Cause
 
 /**
  * Generates code from your model files on save.
@@ -18,6 +19,7 @@ class IshikawaGenerator extends AbstractGenerator {
 
 	override void doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
 		val model = resource.contents.head as Effect
+		val iter = resource.contents
 		fsa.generateFile('ishikawa.xml', '''
 			<model>
 				<effect>
@@ -27,29 +29,31 @@ class IshikawaGenerator extends AbstractGenerator {
 							<name>«category.name»</name>
 							«IF category.description !== null»
 								<description>«category.description»</description>
-							«ENDIF»								
-							«FOR cause : category.causes»	
+							«ENDIF»
+							«IF iter.equals(Cause)»
+							«ENDIF»
+							«FOR cause : category.causes»
 								<cause>
-									<name>«cause.name»</name> 
+									<name>«cause.name»</name>
 									«IF cause.description !== null»
 										<description>«cause.description»</description>
 									«ENDIF»
 									«IF cause.valueOfInterest !== null»
 										<value>«cause.valueOfInterest»</value>
 									«ENDIF»
-									«FOR subcause : cause.subCauses»
+									«FOR subcause : cause.eAllContents.toIterable.filter(typeof(Cause))»
 										<subcause>
 											<name>«subcause.name»</name>
-											«IF cause.description !== null»
-												<description>«cause.description»</description>
+											«IF subcause.description !== null»
+												<description>«subcause.description»</description>
 											«ENDIF»
-											«IF cause.valueOfInterest !== null»
-												<value>«cause.valueOfInterest»</value>
+											«IF subcause.valueOfInterest !== null»
+												<value>«subcause.valueOfInterest»</value>
 											«ENDIF»
 										</subcause>
-								«ENDFOR»
+									«ENDFOR»
 								</cause>
-						«ENDFOR»	
+						«ENDFOR»
 						</category>
 					«ENDFOR»
 					</effect>
