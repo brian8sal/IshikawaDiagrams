@@ -20,7 +20,7 @@ class IshikawaGenerator extends AbstractGenerator {
 	override void doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
 		val model = resource.contents.head as Effect
 		val iter = resource.contents
-		fsa.generateFile(model.name+'.xml', '''
+		fsa.generateFile(model.name.replaceAll(" ","")+'.xml', '''
 			<effect>
 				<name>«model.name»</name>
 				«FOR category : model.categories»
