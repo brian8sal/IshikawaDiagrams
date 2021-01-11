@@ -32,7 +32,7 @@ Workflow {
 		}
 		language = StandardLanguage {
 			name = "ishikawa.Ishikawa"
-			fileExtensions = "ishikawa"
+			fileExtensions = "ish"
 			referencedResource = "platform:/resource/Ishikawa_Model/model/ishikawa_model.genmodel"
 			
 			fragment = ecore2xtext.Ecore2XtextValueConverterServiceFragment2 auto-inject {}
