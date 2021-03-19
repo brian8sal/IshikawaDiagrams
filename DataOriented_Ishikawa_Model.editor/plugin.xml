@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated dataoriented_ishikawa_model -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="dataoriented_ishikawa_model.presentation.Dataoriented_ishikawa_modelModelWizardID"
+            name="%_UI_Dataoriented_ishikawa_modelModelWizard_label"
+            class="dataoriented_ishikawa_model.presentation.Dataoriented_ishikawa_modelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Dataoriented_ishikawa_modelModelFile.gif">
+         <description>%_UI_Dataoriented_ishikawa_modelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated dataoriented_ishikawa_model -->
+      <editor
+            id="dataoriented_ishikawa_model.presentation.Dataoriented_ishikawa_modelEditorID"
+            name="%_UI_Dataoriented_ishikawa_modelEditor_label"
+            icon="icons/full/obj16/Dataoriented_ishikawa_modelModelFile.gif"
+            extensions="dataoriented_ishikawa_model"
+            class="dataoriented_ishikawa_model.presentation.Dataoriented_ishikawa_modelEditor"
+            contributorClass="dataoriented_ishikawa_model.presentation.Dataoriented_ishikawa_modelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

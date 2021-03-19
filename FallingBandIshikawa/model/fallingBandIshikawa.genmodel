@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/FallingBandIshikawa/src-gen" creationIcons="false"
+    editDirectory="/FallingBandIshikawa.edit/src-gen" editorDirectory="/FallingBandIshikawa.editor/src-gen"
+    modelPluginID="FallingBandIshikawa" modelName="FallingBandIshikawa" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>fallingBandIshikawa.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="FallingBandIshikawa" disposableProviderFactory="true" ecorePackage="fallingBandIshikawa.ecore#/">
+    <genClasses ecoreClass="fallingBandIshikawa.ecore#//DriveHalfShaft">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//DriveHalfShaft/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//DriveHalfShaft/manufacturedTime"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fallingBandIshikawa.ecore#//DriveHalfShaft/report"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fallingBandIshikawa.ecore#//DriveHalfShaft/wheelBand"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference fallingBandIshikawa.ecore#//DriveHalfShaft/engineBand"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fallingBandIshikawa.ecore#//DriveHalfShaft/assemblySession"/>
+    </genClasses>
+    <genClasses ecoreClass="fallingBandIshikawa.ecore#//Band">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//Band/model"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fallingBandIshikawa.ecore#//Band/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="fallingBandIshikawa.ecore#//AssemblySession">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//AssemblySession/start"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//AssemblySession/stop"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fallingBandIshikawa.ecore#//AssemblySession/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="fallingBandIshikawa.ecore#//BandBatchParameters">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//BandBatchParameters/maxThickness"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//BandBatchParameters/minThickness"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//BandBatchParameters/avgThickness"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//BandBatchParameters/batchId"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fallingBandIshikawa.ecore#//BandBatchParameters/provider"/>
+    </genClasses>
+    <genClasses ecoreClass="fallingBandIshikawa.ecore#//ComplianceReport">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//ComplianceReport/fallingWheelBand"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//ComplianceReport/fallingEngineBand"/>
+    </genClasses>
+    <genClasses ecoreClass="fallingBandIshikawa.ecore#//MonitoredParameters">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//MonitoredParameters/temperature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//MonitoredParameters/humidity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference fallingBandIshikawa.ecore#//MonitoredParameters/pliersFastenings"/>
+    </genClasses>
+    <genClasses ecoreClass="fallingBandIshikawa.ecore#//Provider">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//Provider/name"/>
+    </genClasses>
+    <genClasses ecoreClass="fallingBandIshikawa.ecore#//PliersData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//PliersData/pressure"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute fallingBandIshikawa.ecore#//PliersData/number"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

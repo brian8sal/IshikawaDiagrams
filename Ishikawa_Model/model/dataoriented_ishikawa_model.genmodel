@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/DataOriented_Ishikawa_Model/src" modelPluginID="DataOriented_Ishikawa_Model"
+    modelName="Dataoriented_ishikawa_model" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>dataoriented_ishikawa_model.ecore</foreignModel>
+  <genPackages prefix="Dataoriented_ishikawa_model" disposableProviderFactory="true"
+      ecorePackage="dataoriented_ishikawa_model.ecore#/">
+    <genClasses ecoreClass="dataoriented_ishikawa_model.ecore#//Effect">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dataoriented_ishikawa_model.ecore#//Effect/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dataoriented_ishikawa_model.ecore#//Effect/categories"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dataoriented_ishikawa_model.ecore#//Effect/dataFeeder"/>
+    </genClasses>
+    <genClasses ecoreClass="dataoriented_ishikawa_model.ecore#//Category">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dataoriented_ishikawa_model.ecore#//Category/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dataoriented_ishikawa_model.ecore#//Category/causes"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="dataoriented_ishikawa_model.ecore#//Cause">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dataoriented_ishikawa_model.ecore#//Cause/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dataoriented_ishikawa_model.ecore#//Cause/realizes"/>
+    </genClasses>
+    <genClasses ecoreClass="dataoriented_ishikawa_model.ecore#//CompoundCause">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dataoriented_ishikawa_model.ecore#//CompoundCause/subCauses"/>
+    </genClasses>
+    <genClasses ecoreClass="dataoriented_ishikawa_model.ecore#//DataLinkedCause">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dataoriented_ishikawa_model.ecore#//DataLinkedCause/dataFeeder"/>
+    </genClasses>
+    <genClasses ecoreClass="dataoriented_ishikawa_model.ecore#//NotMappedCause"/>
+    <genClasses ecoreClass="dataoriented_ishikawa_model.ecore#//AttributeFilter"/>
+    <genClasses ecoreClass="dataoriented_ishikawa_model.ecore#//IncludedReference"/>
+    <genClasses ecoreClass="dataoriented_ishikawa_model.ecore#//DOF">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dataoriented_ishikawa_model.ecore#//DOF/effect"/>
+    </genClasses>
+    <genClasses ecoreClass="dataoriented_ishikawa_model.ecore#//DataFeeder">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dataoriented_ishikawa_model.ecore#//DataFeeder/domainElementSelector"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dataoriented_ishikawa_model.ecore#//DataFeeder/includedReference"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dataoriented_ishikawa_model.ecore#//DataFeeder/attributefilter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dataoriented_ishikawa_model.ecore#//DataFeeder/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
