@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: ishikawa.xtex.ide
+Bundle-ManifestVersion: 2
+Bundle-Name: ishikawa.xtex.ide
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: ishikawa.xtex.ide; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: ishikawa.xtex,
+ Ishikawa,
+ org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: ishikawa.ide.contentassist.antlr,
+ ishikawa.ide.contentassist.antlr.internal
